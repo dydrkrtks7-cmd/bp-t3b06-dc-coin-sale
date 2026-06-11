@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-neon-void">
+  <title>등촌 코인노래방 할인 블로그 | 합리적인 가격의 프리미엄 시설</title>
+  <meta name="description" content="등촌 코인노래방 할인에 대한 모든 것. 최대 50% 할인, 신곡 2만곡, 고음질 JBL 시스템. 24시간 운영, 등촌역 도보 2분. 지금 확인하세요.">
+  <meta name="keywords" content="등촌 코인노래방, 등촌 노래방 할인, 코인노래방 블로그, 노래방 할인 팁, 등촌역 노래방, 등촌 가성비 노래방, 24시간 노래방">
+  <link rel="canonical" href="https://t3b06-dc-coin-sale.vercel.app/blog">
+  <meta property="og:title" content="등촌 코인노래방 할인 블로그 - 파격가 프리미엄 시설">
+  <meta property="og:description" content="등촌 코인노래방 할인에 대한 모든 것. 최대 50% 할인, 신곡 2만곡, 고음질 JBL 시스템. 24시간 운영, 등촌역 도보 2분.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ===== CSS 핵심 (hamburger-menu 패턴 포함, 이전 페이지와 동일) ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', 'Noto Sans KR', system-ui, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; min-height: 100vh; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* 헤더 & 네비게이션 */
+    .header { background: #111; border-bottom: 2px solid #00f7ff; padding: 16px 0; position: sticky; top: 0; z-index: 1000; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.8rem; font-weight: 900; color: #00f7ff; text-transform: uppercase; letter-spacing: -0.02em; text-decoration: none; }
+    .logo span { color: #ff007f; }
+    .nav { display: flex; gap: 24px; }
+    .nav a { color: #ccc; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; text-transform: uppercase; letter-spacing: 0.05em; }
+    .nav a:hover, .nav a.active { color: #00f7ff; }
+    
+    /* 햄버거 메뉴 */
+    .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 4px; }
+    .hamburger span { width: 28px; height: 3px; background: #00f7ff; border-radius: 2px; transition: 0.3s; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -6px); }
+    
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+      .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #111; flex-direction: column; padding: 20px; border-bottom: 2px solid #00f7ff; gap: 16px; }
+      .nav.open { display: flex; }
+      .nav a { font-size: 1.1rem; }
+    }
+    
+    /* 메인 콘텐츠 */
+    .main { padding: 60px 0; }
+    .blog-post { background: #151515; border: 1px solid #2a2a2a; padding: 40px; border-radius: 4px; position: relative; overflow: hidden; }
+    .blog-post::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(180deg, #00f7ff, #ff007f); }
+    .blog-post .post-meta { display: flex; gap: 16px; color: #888; font-size: 0.85rem; margin-bottom: 12px; text-transform: uppercase; }
+    .blog-post .post-meta span { background: #222; padding: 4px 12px; border-radius: 20px; }
+    .blog-post h1 { font-size: 2.2rem; font-weight: 800; color: #f0f0f0; margin-bottom: 16px; line-height: 1.2; }
+    .blog-post h1 i { color: #00f7ff; margin-right: 8px; }
+    .blog-post .post-body { font-size: 1rem; color: #c0c0c0; }
+    .blog-post .post-body p { margin-bottom: 20px; }
+    .blog-post .post-body strong { color: #00f7ff; }
+    .blog-post .post-body ul { margin-bottom: 20px; padding-left: 24px; }
+    .blog-post .post-body li { margin-bottom: 8px; position: relative; list-style: none; }
+    .blog-post .post-body li::before { content: '▸'; color: #ff007f; position: absolute; left: -20px; }
+    .blog-post .highlight-box { background: #1a1a2e; border-left: 4px solid #ff007f; padding: 20px; margin: 24px 0; border-radius: 0 4px 4px 0; }
+    .blog-post .highlight-box p:last-child { margin-bottom: 0; }
+    
+    /* FAQ 섹션 */
+    .faq-section { margin-top: 60px; }
+    .faq-section h2 { font-size: 1.6rem; color: #00f7ff; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 2px solid #222; padding-bottom: 12px; }
+    .faq-grid { display: grid; gap: 16px; }
+    .faq-item { background: #151515; border: 1px solid #2a2a2a; padding: 20px 24px; border-radius: 4px; transition: border-color 0.2s; }
+    .faq-item:hover { border-color: #00f7ff; }
+    .faq-item .question { font-weight: 700; color: #f0f0f0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item .question i { color: #ff007f; }
+    .faq-item .answer { color: #aaa; font-size: 0.95rem; }
+    
+    /* CTA 섹션 */
+    .cta-section { text-align: center; padding: 60px 20px; margin-top: 60px; border-top: 1px solid #222; }
+    .cta-section h2 { font-size: 2rem; color: #f0f0f0; margin-bottom: 16px; }
+    .cta-section p { color: #aaa; margin-bottom: 24px; font-size: 1.05rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .btn { display: inline-block; background: #00f7ff; color: #0a0a0a; font-weight: 800; text-transform: uppercase; padding: 16px 40px; border-radius: 4px; text-decoration: none; font-size: 1rem; letter-spacing: 0.1em; transition: all 0.2s; border: none; cursor: pointer; }
+    .btn:hover { background: #ff007f; color: #fff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255, 0, 127, 0.3); }
+    .btn i { margin-right: 8px; }
+    
+    /* 푸터 */
+    .footer { background: #0d0d0d; border-top: 2px solid #1a1a1a; padding: 40px 0; text-align: center; }
+    .footer p { color: #666; font-size: 0.85rem; }
+    .footer a { color: #00f7ff; text-decoration: none; }
+    .footer .contact { margin-top: 12px; font-size: 1.1rem; }
+    .footer .contact i { color: #ff007f; margin-right: 6px; }
+    
+    /* 유틸리티 */
+    .text-accent { color: #00f7ff; }
+    .text-pink { color: #ff007f; }
+    .mb-0 { margin-bottom: 0 !important; }
+  </style>
+</head>
+<body>
+
+<!-- ===== 헤더 (이전 페이지와 동일) ===== -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><span>⦿</span> 등촌<span>코인</span></a>
+    <nav class="nav" id="mainNav">
+      <a href="/">홈</a>
+      <a href="/blog" class="active">블로그</a>
+      <a href="/price">가격</a>
+      <a href="/contact">연락처</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== 메인 블로그 콘텐츠 ===== -->
+<main class="main">
+  <div class="container">
+    <article class="blog-post">
+      <div class="post-meta">
+        <span><i class="fas fa-calendar-alt"></i> 2025.04.07</span>
+        <span><i class="fas fa-user"></i> 운영자</span>
+        <span><i class="fas fa-tag"></i> 할인가이드</span>
+      </div>
+      <h1><i class="fas fa-microphone-alt"></i> 등촌 코인노래방 할인 완벽 가이드: 최대 50% 절약하는 5가지 방법</h1>
+      <div class="post-body">
+        <p><strong>등촌역 도보 2분</strong> 거리에 위치한 프리미엄 코인노래방은 단순한 가성비를 넘어, <strong>신곡 2만곡</strong>과 <strong>JBL 고음질 사운드</strong>를 갖춘 24시 운영 시설입니다. 본 가이드는 실제 데이터와 업계 분석을 바탕으로 할인 혜택을 극대화하는 방법을 제시합니다.</p>
+        
+        <div class="highlight-box">
+          <p><strong>요약:</strong> 2025년 1분기 기준, 등촌 코인노래방의 평균 객
+</body>
+</html>
